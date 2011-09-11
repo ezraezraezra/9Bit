@@ -1,0 +1,391 @@
+@CHARSET "UTF-8";
+	@font-face {
+				font-family: Folksolid-webfont; src: url('../font/Folksolid-webfont.ttf');
+			}
+			body {
+				background-color: #f0f9fb;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+			}
+			#cbc1 {
+				background-color:#B52841;
+				margin-top:18px;
+				margin-left:18px
+			}
+			#cbc2 {
+				background-color:#FFC051;
+				margin-top:18px;
+			}
+			#cbc3 {
+				background-color:#FF8939;
+				margin-top:18px;
+			}
+			#cbc4 {
+				background-color:#E85F4D;
+				margin-left:18px;
+			}
+			#cbc5 {
+				background-color:#D50051;
+			}
+			#cbc6 {
+				background-color:#44996F;
+			}
+			#cbc7 {
+				background-color:#FF6C0D;
+				margin-left:18px;
+			}
+			#cbc8 {
+				background-color:#216273;
+			}
+			#cbc9 {
+				background-color:#E5C10F;
+			}
+			#crb1 {
+				margin-left: 19px;
+				margin-top: 19px
+			}
+			#crb2 {
+				margin-top:19px;
+			}
+			#crb3 {
+				margin-top:19px;
+			}
+			#crb4 {
+				margin-left:19px;
+			}
+			#crb7 {
+				margin-left:19px;
+			}
+			#color_board {
+				/**background-color:#93DEDB;**/
+				background-color:#0BBFBF;
+				border-radius: 25px;
+				-moz-border-radius: 25px;
+				width: 200px;
+				height: 200px;
+			}
+			.color_board_cell {
+				border:2px solid;
+				/*border-color:B52841;*/
+				border-color: transparent;
+				/**background-color:#93DEDB;**/
+				background-color:#0BBFBF;
+				/*background-color:B52841;*/
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				width: 50px;
+				height: 50px;
+				padding: 0px;
+				margin: 1px;
+				position: relative;
+				float: left;
+				
+				-webkit-transition: border-color .1s linear;
+				-moz-transition: border-color .1s linear;
+			}
+			.color_board_cell:hover {
+				border-color: #593D28;
+			}
+			#color_board_name {
+				/**font-family: Folksolid-webfont;
+				font-size: 20px;**/
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				font-weight: bold;
+				color: #593D28;
+				border-radius: 25px;
+				-moz-border-radius: 25px;
+				
+				/**background-color:#93DEDB;**/
+				background-color:#0BBFBF;
+				padding-bottom:15px;
+				padding-top:15px;
+				width: 200px;
+				color: white;
+			}
+			.cell_color {
+			}
+			.cell_video {
+			}
+			#container_cameras {
+				border-radius: 25px;
+				-moz-border-radius: 25px;
+				/**background-color:#93DEDB;**/
+				background-color:#0BBFBF;
+				width: 200px;
+				height: 90px
+			}
+				
+			#container_main {
+				display: none;
+				position: relative;
+				padding: 10px;
+				width:800px;
+				height: 600px;
+				text-align: center;
+				/**background-color: green;**/
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#container_left {
+				position: relative;
+				width: 250px;
+				height: 590px;
+				/**background-color: white;**/
+				float: left;
+			}
+			#container_left_top {
+				position: relative;
+				width: 100%;
+				height: 100px;
+				/**background-color:blue;**/
+			}
+			#container_left_bottom {
+				position: absolute;
+				left: 25px;
+				bottom: 20px;
+			}
+			#container_right {
+				position: relative;
+				width: 550px;
+				/**background-color: red;**/
+				float: right;
+			}
+			#container_right_board {
+				position: absolute;
+				top: 18px;
+				width: 550px;
+				height: 550px;
+				/**background-color:#93DEDB;**/
+				background-color:#0BBFBF;
+				border-radius: 25px;
+				-moz-border-radius: 25px;
+			}
+			.container_right_board_cell {
+				border:2px solid;
+				/* border-color:B52841; */
+				border-color:transparent;
+				/**background-color:#93DEDB;**/
+				background-color:#0BBFBF;
+				/*background-color:B52841;*/
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				width: 160px;
+				height: 160px;
+				padding: 0px;
+				margin: 4px;
+				position: relative;
+				float: left;
+				z-index: 80;
+				
+				-webkit-transition: background-color .2s linear;
+				-moz-transition: background-color .2s linear;
+				
+			}
+			#title {
+				font-family: Folksolid-webfont;
+				font-size: 96px;/**72px;**/
+				color: #593D28;
+				margin-top:10px;
+			/**	-webkit-transform: translate(-10px, 20px) rotate(-20deg) scale(1.0);
+				-moz-transform: translate(-10px, 20px) rotate(-20deg) scale(1.0); **/
+			}
+			
+			
+			
+			
+			#container_settings {
+				font-family: Folksolid-webfont;
+				z-index: 100;
+				position: absolute;
+				width: 700px;/**600px;**/
+				height: 277px;/**267px;**//**250px;**/
+				/**bottom: 25px;**/
+				top: 100px;
+				margin-left: /**0px**/ 35px;/**50px;**/
+				text-align: center;
+				font-size: 36px;
+				padding: 19px;
+				padding-top: 10px;
+				padding-bottom: 5px;
+				/**padding-left: 9px;**/
+				color: white;
+				background-color:#0BBFBF;
+				border-radius: 15px;
+				-moz-border-radius: 15px;
+				border: 2px solid;
+				-moz-box-shadow: 5px 5px 5px #888888; 
+				-webkit-box-shadow: 5px 5px 5px #888888;
+				/**-webkit-transition: bottom 2s linear;**/
+				-webkit-transition: top 1s linear;
+			}
+			#container_settings_cameras {
+				position: relative;
+				width: 650px;
+				height: /*160*/ 150px;
+				background-color: red;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#container_settings_confirm {
+				position: relative;
+				width: 100px;
+				height: auto;
+				float: right;
+				font-family: Folksolid-webfont;
+				font-size: 24px;
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				border: 2px solid;
+				border-color: brown;
+				padding-top: 7px;
+				background-color: red;
+				cursor: pointer;
+				color: white;
+			}
+			#container_settings_confirm:hover {
+				border-color: black;
+			}
+			#settings_vid_1 {
+				position:relative;
+				float: left;
+			}
+			.color_board_cell_vid {
+				border:2px solid;
+				/*border-color:B52841;*/
+				border-color:transparent;
+				background-color:white;
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				width: 50px;
+				height: 50px;
+				padding: 0px;
+				margin: 1px;
+				position: relative;
+				float: left;
+			}
+			#temp_vid_holder{
+				display:none;
+			}
+			.holder_container_right_board_cell {
+				border:2px solid;
+				/* border-color:B52841; */
+				border-color:transparent;
+				background-color:yellow;
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				width: 160px;
+				height: 160px;
+				padding: 0px;
+				margin: 4px;
+				position: relative;
+				float: left;
+				
+			}
+			
+			.settings_cameras {
+				position: relative;
+				float:left;
+				margin-left: 0px; /*25px;/*10px*/;
+			}
+			
+			#invite_panel {
+				font-family: Folksolid-webfont;
+				z-index: 100;
+				position: absolute;
+				width: 600px;
+				height: 250px;
+				/**bottom: 25px;**/
+				top: -500px;
+				margin-left: 100px;
+				text-align: center;
+				font-size: 36px;
+				padding: 19px;
+				padding-top: 10px;
+				padding-bottom: 5px;
+				padding-left: 9px;
+				color: white;
+				background-color:#0BBFBF;
+				border-radius: 15px;
+				-moz-border-radius: 15px;
+				border: 2px solid;
+				-moz-box-shadow: 5px 5px 5px #888888; 
+				-webkit-box-shadow: 5px 5px 5px #888888;
+				/**-webkit-transition: bottom 2s linear;**/
+				-webkit-transition: top 1s linear;
+				
+			}
+		
+			
+			#invite_ok {
+				position: relative;
+				width: 150px;
+				height: auto;
+				float: right;
+				font-family: Folksolid-webfont;
+				font-size: 28px;
+				border-radius: 10px;
+				-moz-border-radius: 10px;
+				border: 2px solid;
+				border-color: brown;
+				/**padding-top: 7px;**/
+				margin-top:25px;
+				margin-right: 10px;
+				background-color: red;
+				cursor: pointer;
+				color: white;
+			}
+			#invite_ok:hover {
+				border-color: black;
+			}
+			
+			#developer {
+				osition: relative;
+				text-align:center;
+				display:block;
+				width:100px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-left:50%;
+				left:-50px;
+				border:0;
+			}
+			
+			#settings_name_container {
+				position:relative;
+				width: 650px;
+				height: 20px;
+				color:white;
+				text-align:center;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+			
+			.settings_vid_name {
+				position: relative;
+				width: 215px;
+				height: 20px;
+				bottom: 0px;
+				text-align: center;
+				color: white;
+				float: left;
+				font-size: 18px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				font-variant:small-caps;
+			}
+			
+			#devicePanelContainer {
+				z-index: 150;
+				position: absolute;
+				width: 700px;/**600px;**/
+				height: 277px;/**267px;**//**250px;**/
+				/**bottom: 25px;**/
+				top: 100px;
+				margin-left: 0px;/**50px;**/
+				display:none;
+			}
+			

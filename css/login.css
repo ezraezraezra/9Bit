@@ -1,0 +1,119 @@
+@CHARSET "UTF-8";
+
+		#container_login {
+				position: absolute;
+				width: 200px;
+				height: 250px;
+				/**height: 400px;**/
+				
+				background-color: #0BBFBF;
+				border: 2px solid;
+				border-radius: 15px;
+				-moz-border-radius:15px;
+				-moz-box-shadow: 5px 5px 5px #888888;
+				-webkit-box-shadow: 5px 5px 5px #888888;
+				left: 65%;
+				top: 10%;
+				padding: 15px;
+				text-align: center;
+				-webkit-transition: height .1s linear;
+				-moz-transition: height .1s linear;
+				-webkit-transition: color .1s linear;
+				-moz-transition: color .1s linear;
+			}
+			.login_button {
+				position: relative;
+				width: 168px;
+				height: auto;
+				
+				background-color: red;
+				border-radius: 15px;
+				-moz-border-radius:15px;
+				border: 2px solid;
+				border-color: brown;
+				cursor:pointer;
+				font-size: 28px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 15px;
+				text-align: center;
+				-webkit-transition: border-color .1s linear;
+				-moz-transition: border-color .1s linear;
+			}
+			.login_button:hover {
+				border-color: black;
+			}
+			
+			#login_create {
+				display: none;
+			}
+			.login_form {
+				font-family:Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				font-weight: bold;
+				margin-top: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				text-align: left;
+			}
+			#login_button_create_session {
+				margin-top: 24px;
+			}
+			.text_field {
+				height: 18px;
+				width: 168px;
+				margin-top:2px;
+				font-size:18px;
+			}
+			
+			#main_title {
+				position:absolute;
+				left:4%;
+				bottom:4%;
+				height:250px;
+				width:400px;
+				background-image:url('../img/9BIT_logoA.png');
+			}
+			
+			
+			.progress_bar {
+				display:none;
+		background-color: white;
+		width: 60px;
+		height: auto;
+		margin-left:auto;
+		margin-right: auto;
+		margin-top: 34px;
+		text-align: center;
+		
+	}
+	.progress_ball {
+		background-color: red;
+		border-radius: 25px;
+		width: 15px;
+		height: 15px;
+		-moz-border-radius: 25px;
+		margin: 2px;
+		position: relative;
+		float: left;
+		-webkit-animation-name: progress_loader;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: linear;
+		opacity: 0;
+		-webkit-tranform: scale(0.8);
+	}
+	#progress_ball_1 {
+		-webkit-animation-delay: .3s;
+	}
+	#progress_ball_2 {
+		-webkit-animation-delay: .4s;
+	}
+	#progress_ball_3 {
+		-webkit-animation-delay: .5s;
+	}
+	@-webkit-keyframes progress_loader {
+		0%{opacity: 0;}
+		50%{opacity:1;}
+		100%{opacity:0;}
+	}

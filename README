@@ -1,0 +1,23 @@
+/**********************************************************************
+ * Developer:   Ezra Velazquez http://ezraezraezra.com
+ * Class:       ITP - Dynamic Web Development
+ * 
+ * Date:        March 2011
+ *
+ * Title:       9Bit           http://ezraezraezra.com/9bit
+ * Description: Web video conference art game
+ *
+ * Tech:        AJAX, CSS, CSS3, HTML, JavaScript, JSON, jQuery, 
+ *              MySQL, OpenTok API, PHP
+ * Last Update: March 25th, 2011
+ ***********************************************************************/
+ 
+ NOTE: *** 3rd PARTY LIBRARIES HAVE BEEN OMITTED FROM THE PUBLIC REPO ***
+ 
+ Libraries Omitted:  OpenTok     http://www.tokbox.com
+                     jQuery      http://jquery.com
+
+ Folders Omitted:    img
+                     font        Font files found online
+
+ Project Statement:  php/info_page.php
