@@ -1,4 +1,13 @@
-
+/*
+ * Project:     9Bit
+ * Description: Web video conference art game
+ * Website:     http://ezraezraezra.com/9bit
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        March 2011
+ * 
+ */
 
 function video(session_num, token_num) {
 	//$.getScript("http://staging.tokbox.com/v0.91/js/TB.min.js", function(){

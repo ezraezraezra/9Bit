@@ -1,4 +1,14 @@
 <?php
+/*
+ * Project:     9Bit
+ * Description: Web video conference art game
+ * Website:     http://ezraezraezra.com/9bit
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        March 2011
+ * 
+ */
 //require "login.php";
 
 echo '<div id="container_main">

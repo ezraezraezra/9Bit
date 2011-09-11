@@ -1,3 +1,13 @@
+/*
+ * Project:     9Bit
+ * Description: Web video conference art game
+ * Website:     http://ezraezraezra.com/9bit
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        March 2011
+ * 
+ */
 function info() {
 	$("#container_login").fadeOut('slow', function() {
 		$.post('php/info_page.php',

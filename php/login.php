@@ -2,6 +2,16 @@
 require "info.php";
 require_once '../SDK/API_Config.php';
 require_once '../SDK/OpenTokSDK.php';
+/*
+ * Project:     9Bit
+ * Description: Web video conference art game
+ * Website:     http://ezraezraezra.com/9bit
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        March 2011
+ * 
+ */
 
 if($_POST['comm'] == 'create') {
 	login_display('Join Session', 'Your New');

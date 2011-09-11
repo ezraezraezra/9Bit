@@ -1,3 +1,13 @@
+/*
+ * Project:     9Bit
+ * Description: Web video conference art game
+ * Website:     http://ezraezraezra.com/9bit
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        March 2011
+ * 
+ */
 function appStart(session_id, session_name, user_id){
 	var $colorHolderPreId = null;
 	var $colorHolder = null;
